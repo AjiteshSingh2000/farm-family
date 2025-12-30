@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm Family - Cultivating goodness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- CSS VARIABLES & RESET --- */
         :root {
@@ -14,6 +15,7 @@
             --text-dark: #333333;
             --text-light: #666666;
             --white: #ffffff;
+            --whatsapp: #25D366;
         }
 
         * {
@@ -22,6 +24,8 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        html { scroll-behavior: smooth; }
 
         body {
             background-color: var(--bg-light);
@@ -51,7 +55,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 110px;
+            height: 90px;
         }
 
         .logo {
@@ -60,7 +64,7 @@
         }
         
         .logo img { 
-            height: 160px;
+            height: 60px;
             width: auto;
             object-fit: contain;
         }
@@ -333,7 +337,7 @@
             background-color: #1ebc57;
         }
 
-         /* Responsive */
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .nav-links { display: none; }
@@ -380,15 +384,18 @@
         <div class="container">
             <div class="features-grid">
                 <div class="feature-item">
-                    <h3>🌱 100% Natural</h3>
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Natural</h3>
                     <p>No chemicals, preservatives, or artificial flavors.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>🪵 Wood Cold Pressed</h3>
+                    <i class="fas fa-tint"></i>
+                    <h3>Wood Cold Pressed</h3>
                     <p>Traditional extraction to retain nutrients and aroma.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>🌾 Farm Fresh</h3>
+                    <i class="fas fa-tractor"></i>
+                    <h3>Farm Fresh</h3>
                     <p>Sourced directly from the best farms for quality.</p>
                 </div>
             </div>
@@ -455,7 +462,12 @@
             </div>
         </div>
     </section>
-<footer id="contact">
+
+    <a href="https://wa.me/919412309944" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer id="contact">
         <div class="container">
             <a href="#" class="footer-logo">
                 <img src="logo.png" alt="Farm Family Logo">
@@ -491,12 +503,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
