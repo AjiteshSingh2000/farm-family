@@ -1,16 +1,27 @@
+Here is the updated index.html file. I have changed the browser tab title to "Farm Family - Cultivating goodness" as requested, while keeping the new logo integration.
+
+How to Update:
+Copy the code below.
+
+Open your local index.html file (on your computer) and replace everything inside it with this new code.
+
+Upload the updated file to GitHub (dragging and dropping it into your repository).
+
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Family - Cultivating GOODNESS</title>
+    <title>Farm Family - Cultivating goodness</title>
     <style>
         /* --- CSS VARIABLES & RESET --- */
         :root {
-            --brand-green: #2E7D32; /* Matches 'family' text */
-            --brand-red: #C62828;   /* Matches 'farm' text */
-            --brand-gold: #F9A825;  /* Matches wheat icon */
-            --bg-light: #FDFBF7;    /* Warm off-white background */
+            --brand-green: #2E7D32; 
+            --brand-red: #C62828;   
+            --brand-gold: #F9A825;  
+            --bg-light: #FDFBF7;    
             --text-dark: #333333;
             --text-light: #666666;
             --white: #ffffff;
@@ -51,19 +62,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80px;
+            height: 90px;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: bold;
             display: flex;
             align-items: center;
         }
         
-        .logo span.farm { color: var(--brand-red); }
-        .logo span.family { color: var(--brand-green); }
-        .logo img { height: 40px; margin-right: 10px; } /* Assuming you add the logo image */
+        .logo img { 
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
 
         .nav-links {
             display: flex;
@@ -175,7 +186,7 @@
         }
 
         .product-image {
-            height: 300px; /* Adjust height based on your images */
+            height: 300px;
             width: 100%;
             background-color: #f9f9f9;
             display: flex;
@@ -248,6 +259,14 @@
             font-weight: bold;
             margin-bottom: 20px;
             display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            filter: brightness(0) invert(1);
         }
 
         .copyright {
@@ -260,7 +279,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Simplified for mobile */
+            .nav-links { display: none; }
         }
     </style>
 </head>
@@ -270,7 +289,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <span class="farm">farm</span><span class="family">family</span>
+                    <img src="logo.png" alt="Farm Family Logo">
                 </a>
                 
                 <div class="nav-links">
@@ -376,7 +395,9 @@
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
-                <span class="footer-logo">farm <span style="color:#4CAF50;">family</span></span>
+                <a href="#" class="footer-logo">
+                    <img src="logo.png" alt="Farm Family Logo">
+                </a>
                 <p>Bringing traditional purity back to your home.</p>
                 <br>
                 <p>Contact us: connect@farmfamily.com | +91 9412309944</p>
@@ -385,9 +406,3 @@
                 &copy; 2025 Farm Family. All Rights Reserved.
             </div>
         </div>
-    </footer>
-
-</body>
-
-</html>
-
